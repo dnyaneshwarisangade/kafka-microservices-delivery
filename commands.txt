@@ -1,0 +1,18 @@
+
+Start a zookeeper server:
+C:\kafka_2.13-3.5.0\kafka_2.13-3.5.0>bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+
+Start Kafka server:
+C:\kafka_2.13-3.5.0\kafka_2.13-3.5.0>bin\windows\kafka-server-start.bat config\server.properties
+
+Create new kafka topic:
+C:\kafka_2.13-3.5.0\kafka_2.13-3.5.0>bin\windows\kafka-topics.bat --create --topic location-update-topic --bootstrap-server localhost:9092
+Created topic user-topic
+
+producer window:
+C:\kafka_2.13-3.5.0\kafka_2.13-3.5.0>bin\windows\kafka-console-producer.bat --topic location-update-topic --bootstrap-server localhost:9092
+
+consumer window:
+C:\kafka_2.13-3.5.0\kafka_2.13-3.5.0>bin\windows\kafka-console-consumer.bat --topic location-update-topic --from-beginning --bootstrap-server localhost:9092
+
+.\bin\windows\kafka-console-consumer.bat --topic location-update-topic  --bootstrap-server localhost:9092
