@@ -1,0 +1,1 @@
+Apache Kafka–based delivery service application built using a microservices architecture. The system consists of two microservices: a Delivery Agent (Boy) service and an End User service, enabling asynchronous communication and event-driven processing.
